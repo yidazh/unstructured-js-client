@@ -186,7 +186,7 @@ export type PartitionParameters = {
   /**
    * sort mode
    */
-  sort_mode?: string | undefined;
+  sortMode?: string | null | undefined;
 };
 
 /** @internal */
@@ -385,6 +385,7 @@ export const PartitionParameters$inboundSchema: z.ZodType<
   table_ocr_agent: z.nullable(z.string()).optional(),
   unique_element_ids: z.boolean().default(false),
   xml_keep_tags: z.boolean().default(false),
+  sort_mode: z.nullable(z.string()).optional(),
 }).transform((v) => {
   return remap$(v, {
     "chunking_strategy": "chunkingStrategy",
@@ -413,6 +414,7 @@ export const PartitionParameters$inboundSchema: z.ZodType<
     "table_ocr_agent": "tableOcrAgent",
     "unique_element_ids": "uniqueElementIds",
     "xml_keep_tags": "xmlKeepTags",
+    "sort_mode": "sortMode",
   });
 });
 
@@ -450,6 +452,7 @@ export type PartitionParameters$Outbound = {
   table_ocr_agent?: string | null | undefined;
   unique_element_ids: boolean;
   xml_keep_tags: boolean;
+  sort_mode?: string | null | undefined;
 };
 
 /** @internal */
@@ -492,6 +495,7 @@ export const PartitionParameters$outboundSchema: z.ZodType<
   tableOcrAgent: z.nullable(z.string()).optional(),
   uniqueElementIds: z.boolean().default(false),
   xmlKeepTags: z.boolean().default(false),
+  sortMode: z.nullable(z.string()).optional(),
 }).transform((v) => {
   return remap$(v, {
     chunkingStrategy: "chunking_strategy",
@@ -520,6 +524,7 @@ export const PartitionParameters$outboundSchema: z.ZodType<
     tableOcrAgent: "table_ocr_agent",
     uniqueElementIds: "unique_element_ids",
     xmlKeepTags: "xml_keep_tags",
+    sortMode: "sort_mode",
   });
 });
 
