@@ -4,7 +4,6 @@
 /funcs
 /core.*
 /esm
-/dist
 /.tshy
 /.tshy-*
 /models
@@ -17,7 +16,6 @@
 /cjs
 /node_modules
 /.tsbuildinfo
-dist/
 node_modules/
 # Custom ignores
 openapi.json
