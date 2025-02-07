@@ -274,6 +274,15 @@ export async function generalPartition(
     );
   }
 
+  // add sort_mode parameter
+  if (payload.partition_parameters.sort_mode !== undefined) {
+    appendForm(
+      body,
+      "sort_mode",
+      payload.partition_parameters.sort_mode,
+    );
+  }
+
   const path = pathToFunc("/general/v0/general")();
 
   const headers = new Headers(compactMap({
