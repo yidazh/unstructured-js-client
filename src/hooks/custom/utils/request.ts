@@ -3,7 +3,7 @@ import {
   PARTITION_FORM_FILES_KEY,
   PARTITION_FORM_SPLIT_PDF_PAGE_KEY,
   PARTITION_FORM_STARTING_PAGE_NUMBER_KEY,
-} from "../common.js";
+} from "../common.ts";
 
 /**
  * Removes the "content-length" header from the passed response headers.

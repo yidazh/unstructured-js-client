@@ -3,11 +3,11 @@
  */
 
 import * as z from "zod";
-import { remap as remap$ } from "../../../lib/primitives.js";
-import { safeParse } from "../../../lib/schemas.js";
-import { Result as SafeParseResult } from "../../types/fp.js";
-import { SDKValidationError } from "../errors/sdkvalidationerror.js";
-import * as shared from "../shared/index.js";
+import { remap as remap$ } from "../../../lib/primitives.ts";
+import { safeParse } from "../../../lib/schemas.ts";
+import { Result as SafeParseResult } from "../../types/fp.ts";
+import { SDKValidationError } from "../errors/sdkvalidationerror.ts";
+import * as shared from "../shared/index.ts";
 
 export type PartitionRequest = {
   partitionParameters: shared.PartitionParameters;

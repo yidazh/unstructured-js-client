@@ -10,8 +10,8 @@ import {
   ZodRawShape,
   ZodTypeAny,
 } from "zod";
-import { SDKValidationError } from "../sdk/models/errors/sdkvalidationerror.js";
-import { ERR, OK, Result } from "../sdk/types/fp.js";
+import { SDKValidationError } from "../sdk/models/errors/sdkvalidationerror.ts";
+import { ERR, OK, Result } from "../sdk/types/fp.ts";
 
 /**
  * Utility function that executes some code which may throw a ZodError. It

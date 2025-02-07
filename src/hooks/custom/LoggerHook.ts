@@ -1,4 +1,4 @@
-import { AfterErrorContext, AfterErrorHook, AfterSuccessContext, AfterSuccessHook } from "../types.js";
+import { AfterErrorContext, AfterErrorHook, AfterSuccessContext, AfterSuccessHook } from "../types.ts";
 
 /**
  * Represents a hook that logs status and information that the request will be retried
