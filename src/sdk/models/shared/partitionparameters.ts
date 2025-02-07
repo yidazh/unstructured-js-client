@@ -183,6 +183,10 @@ export type PartitionParameters = {
    * If `True`, will retain the XML tags in the output. Otherwise it will simply extract the text from within the tags. Only applies to XML documents.
    */
   xmlKeepTags?: boolean | undefined;
+  /**
+   * sort mode
+   */
+  sort_mode?: string | undefined;
 };
 
 /** @internal */
