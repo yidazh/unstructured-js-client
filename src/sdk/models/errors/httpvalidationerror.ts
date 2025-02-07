@@ -3,10 +3,10 @@
  */
 
 import * as z from "zod";
-import { safeParse } from "../../../lib/schemas.ts";
-import { Result as SafeParseResult } from "../../types/fp.ts";
-import * as shared from "../shared/index.ts";
-import { SDKValidationError } from "./sdkvalidationerror.ts";
+import { safeParse } from "../../../lib/schemas.js";
+import { Result as SafeParseResult } from "../../types/fp.js";
+import * as shared from "../shared/index.js";
+import { SDKValidationError } from "./sdkvalidationerror.js";
 
 export type Detail = Array<shared.ValidationError> | string;
 

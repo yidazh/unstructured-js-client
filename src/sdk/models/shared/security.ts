@@ -3,10 +3,10 @@
  */
 
 import * as z from "zod";
-import { remap as remap$ } from "../../../lib/primitives.ts";
-import { safeParse } from "../../../lib/schemas.ts";
-import { Result as SafeParseResult } from "../../types/fp.ts";
-import { SDKValidationError } from "../errors/sdkvalidationerror.ts";
+import { remap as remap$ } from "../../../lib/primitives.js";
+import { safeParse } from "../../../lib/schemas.js";
+import { Result as SafeParseResult } from "../../types/fp.js";
+import { SDKValidationError } from "../errors/sdkvalidationerror.js";
 
 export type Security = {
   apiKeyAuth?: string | undefined;

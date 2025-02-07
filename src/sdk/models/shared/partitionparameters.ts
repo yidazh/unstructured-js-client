@@ -3,16 +3,16 @@
  */
 
 import * as z from "zod";
-import { remap as remap$ } from "../../../lib/primitives.ts";
-import { safeParse } from "../../../lib/schemas.ts";
-import { blobLikeSchema } from "../../types/blobs.ts";
+import { remap as remap$ } from "../../../lib/primitives.js";
+import { safeParse } from "../../../lib/schemas.js";
+import { blobLikeSchema } from "../../types/blobs.js";
 import {
   catchUnrecognizedEnum,
   OpenEnum,
   Unrecognized,
-} from "../../types/enums.ts";
-import { Result as SafeParseResult } from "../../types/fp.ts";
-import { SDKValidationError } from "../errors/sdkvalidationerror.ts";
+} from "../../types/enums.js";
+import { Result as SafeParseResult } from "../../types/fp.js";
+import { SDKValidationError } from "../errors/sdkvalidationerror.js";
 
 export enum ChunkingStrategy {
   Basic = "basic",

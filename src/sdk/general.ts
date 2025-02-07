@@ -5,12 +5,12 @@
 import {
   generalPartition,
   PartitionAcceptEnum,
-} from "../funcs/generalPartition.ts";
-import { ClientSDK, RequestOptions } from "../lib/sdks.ts";
-import * as operations from "./models/operations/index.ts";
-import { unwrapAsync } from "./types/fp.ts";
+} from "../funcs/generalPartition.js";
+import { ClientSDK, RequestOptions } from "../lib/sdks.js";
+import * as operations from "./models/operations/index.js";
+import { unwrapAsync } from "./types/fp.js";
 
-export { PartitionAcceptEnum } from "../funcs/generalPartition.ts";
+export { PartitionAcceptEnum } from "../funcs/generalPartition.js";
 
 export class General extends ClientSDK {
   /**

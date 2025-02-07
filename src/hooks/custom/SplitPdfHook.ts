@@ -9,7 +9,7 @@ import {
   BeforeRequestHook,
   SDKInitHook,
   SDKInitOptions,
-} from "../types.ts";
+} from "../types.js";
 import {
   getOptimalSplitSize, getSplitPdfAllowFailed,
   getSplitPdfConcurrencyLevel,
@@ -22,14 +22,14 @@ import {
   prepareResponseHeaders,
   splitPdf,
   stringToBoolean,
-} from "./utils/index.ts";
+} from "./utils/index.js";
 import {
   HTTPClientExtension,
   generateGuid,
   MIN_PAGES_PER_THREAD,
   PARTITION_FORM_FILES_KEY,
   PARTITION_FORM_SPLIT_PDF_PAGE_KEY,
-} from "./common.ts";
+} from "./common.js";
 import {retry, RetryConfig} from "../../lib/retries";
 
 /**
